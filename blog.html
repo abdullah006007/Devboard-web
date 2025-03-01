@@ -23,7 +23,10 @@
           <h2 class="text-3xl">Dev<span class="font-extrabold">Board</span></h2>
         </div>
 
-        <button id="back-to-desk" class="text-white py-1 px-4 bg-[#3752FD] rounded-xl">
+        <button
+          id="back-to-desk"
+          class="text-white py-1 px-4 bg-[#3752FD] rounded-xl"
+        >
           Back to Desk
         </button>
       </nav>
@@ -31,78 +34,88 @@
       <h1 class="text-2xl font-extrabold text-center mt-4">Blog</h1>
 
       <div class="mt-7 mb-5">
-        <h2 class="text-xl font-semibold p-2  bg-white">
+        <h2 class="text-xl font-semibold p-2 bg-white">
           Question:1 What are the different ways to select an element in the
           DOM?
         </h2>
-        <hr class="border-t border-gray-200 border-dashed m-0 p-0"> 
+        <hr class="border-t border-gray-200 border-dashed m-0 p-0" />
 
-        <p class="font-normal text-sm text-slate-500 p-2  bg-white">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ab neque
-          laboriosam dolor dolores, ut quas aliquam nisi dolorum natus!
+        <p class="font-normal text-sm text-slate-500 p-2 bg-white">
+          Different ways to select to select an element in the Dom is :
+          document.getElementById( ), document.getElementsByClassName( ),
+          document.getElementsByTagName( ), document.querySelector( ),
+          document.querySelectorAll( ).
         </p>
       </div>
 
       <!-- ques-2 -->
-      
-      <div class=" mb-5">
-        <h2 class="text-xl font-semibold p-2  bg-white">
-            Question-2: What is the difference between innerHTML, innerText, and textContent ?
-        </h2>
-        <hr class="border-t border-gray-200 border-dashed m-0 p-0"> 
 
-        <p class="font-normal text-sm text-slate-500 p-2  bg-white">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ab neque
-          laboriosam dolor dolores, ut quas aliquam nisi dolorum natus!
+      <div class="mb-5">
+        <h2 class="text-xl font-semibold p-2 bg-white">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h2>
+        <hr class="border-t border-gray-200 border-dashed m-0 p-0" />
+
+        <p class="font-normal text-sm text-slate-500 p-2 bg-white">
+          The differences between innerHTML, innerText, and textContent are: -
+          innerHTML allows to insert raw HTML into the document. - innerText
+          updates specific text while ignoring hidden elements. - textContent
+          is like plain text without any HTML formatting.
         </p>
       </div>
-      <!-- ques-3 -->
-      
-      <div class=" mb-5">
-        <h2 class="text-xl font-semibold p-2  bg-white">
-            Question-3: What is event delegation in the DOM?
-        </h2>
-        <hr class="border-t border-gray-200 border-dashed m-0 p-0"> 
 
-        <p class="font-normal text-sm text-slate-500 p-2  bg-white">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ab neque
-          laboriosam dolor dolores, ut quas aliquam nisi dolorum natus!
+      <!-- ques-3 -->
+
+      <div class="mb-5">
+        <h2 class="text-xl font-semibold p-2 bg-white">
+          Question-3: What is event delegation in the DOM?
+        </h2>
+        <hr class="border-t border-gray-200 border-dashed m-0 p-0" />
+
+        <p class="font-normal text-sm text-slate-500 p-2 bg-white">
+          event delegation is like Instead of adding event listeners to every
+          child element, we add just one event listener to their parent. When a
+          child is clicked, the event moves up to the parent .
         </p>
       </div>
 
       <!-- ques-4 -->
-      
-      <div class=" mb-5">
-        <h2 class="text-xl font-semibold p-2  bg-white">
-            Question-4: What is event bubbling in the DOM?
-        </h2>
-        <hr class="border-t border-gray-200 border-dashed m-0 p-0"> 
 
-        <p class="font-normal text-sm text-slate-500 p-2  bg-white">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ab neque
-          laboriosam dolor dolores, ut quas aliquam nisi dolorum natus!
+      <div class="mb-5">
+        <h2 class="text-xl font-semibold p-2 bg-white">
+          Question-4: What is event bubbling in the DOM?
+        </h2>
+        <hr class="border-t border-gray-200 border-dashed m-0 p-0" />
+
+        <p class="font-normal text-sm text-slate-500 p-2 bg-white">
+          the event moves up to its parent, then to the grandparent, and
+          continues up to the top of the document. This process is called event
+        bubbling in the DOM.
         </p>
       </div>
-
 
       <!-- ques-5 -->
-      
-      <div class=" mb-5">
-        <h2 class="text-xl font-semibold p-2  bg-white">
-            Question-5: How do you create, add, and remove elements using JavaScript?
-        </h2>
-        <hr class="border-t border-gray-200 border-dashed m-0 p-0"> 
 
-        <p class="font-normal text-sm text-slate-500 p-2  bg-white">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ab neque
-          laboriosam dolor dolores, ut quas aliquam nisi dolorum natus!
+      <div class="mb-5">
+        <h2 class="text-xl font-semibold p-2 bg-white">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h2>
+        <hr class="border-t border-gray-200 border-dashed m-0 p-0" />
+
+        <p class="font-normal text-sm text-slate-500 p-2 bg-white">
+          To create an element, use `document.createElement` and specify the tag
+          name, like div, p, or img. After that, use `.classList` and then
+          `.add` to add a class name. For example, to add a class to an input
+          tag, you would write:
+          document.createElement('input') .classList.add('input-class-name'); To
+          remove a class, use .classList.remove( ) For example:
+          document.createElement('input').classList.remove('input-class-name');
+          use add the 'hidden' class using .add('hidden') 
         </p>
       </div>
-
-
     </section>
-
-    
 
     <script src="./script/blog.js"></script>
   </body>
